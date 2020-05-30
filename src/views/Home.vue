@@ -1,18 +1,53 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div>{{ selectedData }}</div>
+    <button @click="toTwoPage">to Two Page</button>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      msg: 'Hello Vue',
+      dataList: [],
+      selectedData: ''
+    }
+  },
+  mounted() {
+    // this.getListData()
+    // this.$store.dispatch('getDataList')
+    console.log('mp')
+    if (this.$route.query && this.$route.query.selectedData) {
+      this.selectedData = this.$route.query.selectedData
+    } else {
+      this.getListData()
+    }
+  },
+  methods: {
+    toTwoPage() {
+      console.log('toTwoPage')
+      this.$router.push({ name: 'Two', params: { rpar: this.dataList } })
+    },
+    getListData() {
+      for (let i = 0; i < 20; i++) {
+        this.dataList.push('第 ' + i + ' 个')
+      }
+      this.selectedData = this.dataList[0]
+    }
   }
 }
 </script>
+<style lang="less" scoped>
+.container {
+  text-align: center;
+  padding: 20px;
+  button {
+    border: none;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: cyan;
+    margin-top: 30px;
+  }
+}
+</style>
