@@ -5,37 +5,44 @@ import One from '../views/One.vue'
 import Two from '../views/Two.vue'
 import List from '../views/List.vue'
 import Details from '../views/Details.vue'
+import DynamicTable from '../views/tabledemo/dynamicTable.vue'
 
 Vue.use(VueRouter)
 
 const routes = [{
-    path: '/',
-    redirect: '/list'
-  },
-  {
-    path: '/home',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/list',
-    name: 'List',
-    component: List
-  },
-  {
-    path: '/details',
-    name: 'Details',
-    component: Details
-  }, {
-    path: '/one',
-    name: 'One',
-    component: One
-  },
-  {
-    path: '/two',
-    name: 'Two',
-    component: Two
-  }
+  path: '/',
+  redirect: '/dynamicTable'
+},
+{
+  path: '/home',
+  name: 'Home',
+  component: Home
+},
+{
+  path: '/list',
+  name: 'List',
+  component: List
+},
+{
+  path: '/details',
+  name: 'Details',
+  component: Details
+}, {
+  path: '/one',
+  name: 'One',
+  component: One
+},
+{
+  path: '/two',
+  name: 'Two',
+  component: Two
+},
+{
+  path: '/dynamicTable',
+  name: 'dynamicTable',
+  component: DynamicTable
+}
+
   // ,
   // {
   //   path: '/about',

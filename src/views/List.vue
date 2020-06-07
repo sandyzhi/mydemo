@@ -16,7 +16,7 @@
 
 <script>
 import MescrollVue from 'mescroll.js/mescroll.vue'
-import MescrollMixins from '@/assets/MescrollMixins.js'
+// import MescrollMixins from '@/assets/MescrollMixins.js'
 export default {
   data() {
     return {
