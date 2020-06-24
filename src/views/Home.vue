@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>{{ selectedData }}</div>
-    <button @click="toTwoPage">to Two Page</button>
+    <el-button @click="toTwoPage">to Two Page</el-button>
+    <el-button  @click="$router.push({path:'/selectDemo'})"> el-select</el-button>
   </div>
 </template>
 <script>
