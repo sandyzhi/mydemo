@@ -6,12 +6,13 @@ import Two from '../views/Two.vue'
 import List from '../views/List.vue'
 import Details from '../views/Details.vue'
 import DynamicTable from '../views/tabledemo/dynamicTable.vue'
+import CustomTable from '../views/tabledemo/customTable.vue'
 
 Vue.use(VueRouter)
 
 const routes = [{
   path: '/',
-  redirect: '/dynamicTable'
+  redirect: '/customTable'
 },
 {
   path: '/home',
@@ -41,6 +42,11 @@ const routes = [{
   path: '/dynamicTable',
   name: 'dynamicTable',
   component: DynamicTable
+},
+{
+  path: '/customTable',
+  name: 'customTable',
+  component: CustomTable
 }
 
   // ,
