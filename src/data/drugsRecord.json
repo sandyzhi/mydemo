@@ -1,0 +1,75 @@
+{
+    "code": 200,
+    "codeText": "业务操作成功",
+    "message": "",
+    "success": true,
+    "timestamp": 1591585548806,
+    "data": [{
+        "id": "",
+        "patientSignId": "",
+        "patientInfo": {
+            "patientName": "",
+            "genderCode": "",
+            "gender": "",
+            "idCardNo": ""
+        },
+        "drugsInfo": [{
+            "drugNo": "cillum",
+            "drugName": "id cupidatat commodo mollit",
+            "commonName": "magna Duis",
+            "specification": "sit Excepteur tempor reprehenderit",
+            "unit": "sit Excepteur",
+            "drugDose": "nisi aliquip eu Duis",
+            "drugNumber": "aliqua dolore officia esse",
+            "times": "est aute minim culpa Ut",
+            "detailDirection": "ex"
+        }, {
+            "drugNo": "cillum",
+            "drugName": "id cupidatat commodo mollit",
+            "commonName": "magna Duis",
+            "specification": "sit Excepteur tempor reprehenderit",
+            "unit": "sit Excepteur",
+            "drugDose": "nisi aliquip eu Duis",
+            "drugNumber": "aliqua dolore officia esse",
+            "times": "est aute minim culpa Ut",
+            "detailDirection": "ex"
+        }, {
+            "drugNo": "cillum",
+            "drugName": "id cupidatat commodo mollit",
+            "commonName": "magna Duis",
+            "specification": "sit Excepteur tempor reprehenderit",
+            "unit": "sit Excepteur",
+            "drugDose": "nisi aliquip eu Duis",
+            "drugNumber": "aliqua dolore officia esse",
+            "times": "est aute minim culpa Ut",
+            "detailDirection": "ex"
+        }, {
+            "drugNo": "cillum",
+            "drugName": "id cupidatat commodo mollit",
+            "commonName": "magna Duis",
+            "specification": "sit Excepteur tempor reprehenderit",
+            "unit": "sit Excepteur",
+            "drugDose": "nisi aliquip eu Duis",
+            "drugNumber": "aliqua dolore officia esse",
+            "times": "est aute minim culpa Ut",
+            "detailDirection": "ex"
+        }, {
+            "drugNo": "cillum",
+            "drugName": "id cupidatat commodo mollit",
+            "commonName": "magna Duis",
+            "specification": "sit Excepteur tempor reprehenderit",
+            "unit": "sit Excepteur",
+            "drugDose": "nisi aliquip eu Duis",
+            "drugNumber": "aliqua dolore officia esse",
+            "times": "est aute minim culpa Ut",
+            "detailDirection": "ex"
+        }],
+        "prescribeInfo": {
+            "prescribeMedicalInstitutionNo": "amet culpa ",
+            "prescribeMedicalInstitutionName": "cillum minim",
+            "prescribePhysicianNo": "culpa commodo Ut",
+            "prescribePhysicianName": "aliqua occaecat nulla aute",
+            "prescriptionTime": "incididunt id magna"
+        }
+    }]
+}
