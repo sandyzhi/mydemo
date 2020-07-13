@@ -8,13 +8,15 @@ import Details from '../views/Details.vue'
 import DynamicTable from '../views/tabledemo/dynamicTable.vue'
 import HBTable from '../views/tabledemo/hebingtable.vue'
 import SelectDemo from '../views/select/SelectDemo.vue'
+import DocumentStudy from  '../views/DocumentStudy.vue'
 
 Vue.use(VueRouter)
 
 const routes = [{
         path: '/',
-        redirect: '/home'
+        redirect: '/documentStudy'
     },
+    {path:'/documentStudy',name:'documentStudy',component:DocumentStudy},
     {
         path: 'dynamicTable',
         redirect: '/dynamicTable'
