@@ -1,0 +1,121 @@
+[{
+    "diseaseNo": "00",
+    "diseaseName": "疾病0",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  },
+  {
+    "diseaseNo": "01",
+    "diseaseName": "疾病1",
+    "categoryNo": "03",
+    "categoryName": "结核类"
+  },
+  {
+    "diseaseNo": "02",
+    "diseaseName": "疾病2",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  },
+  {
+    "diseaseNo": "03",
+    "diseaseName": "疾病3",
+    "categoryNo": "03",
+    "categoryName": "结核类"
+  },
+  {
+    "diseaseNo": "04",
+    "diseaseName": "疾病4",
+    "categoryNo": "03",
+    "categoryName": "结核类"
+  },
+  {
+    "diseaseNo": "05",
+    "diseaseName": "疾病5",
+    "categoryNo": "04",
+    "categoryName": "其他"
+  },
+  {
+    "diseaseNo": "06",
+    "diseaseName": "疾病6",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  },
+  {
+    "diseaseNo": "07",
+    "diseaseName": "疾病7",
+    "categoryNo": "04",
+    "categoryName": "其他"
+  },
+  {
+    "diseaseNo": "08",
+    "diseaseName": "疾病8",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  },
+  {
+    "diseaseNo": "09",
+    "diseaseName": "疾病9",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  },
+  {
+    "diseaseNo": "010",
+    "diseaseName": "疾病10",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  },
+  {
+    "diseaseNo": "011",
+    "diseaseName": "疾病11",
+    "categoryNo": "01",
+    "categoryName": "精神类"
+  },
+  {
+    "diseaseNo": "012",
+    "diseaseName": "疾病12",
+    "categoryNo": "03",
+    "categoryName": "结核类"
+  },
+  {
+    "diseaseNo": "013",
+    "diseaseName": "疾病13",
+    "categoryNo": "04",
+    "categoryName": "其他"
+  },
+  {
+    "diseaseNo": "014",
+    "diseaseName": "疾病14",
+    "categoryNo": "01",
+    "categoryName": "精神类"
+  },
+  {
+    "diseaseNo": "015",
+    "diseaseName": "疾病15",
+    "categoryNo": "03",
+    "categoryName": "结核类"
+  },
+  {
+    "diseaseNo": "016",
+    "diseaseName": "疾病16",
+    "categoryNo": "04",
+    "categoryName": "其他"
+  },
+  {
+    "diseaseNo": "017",
+    "diseaseName": "疾病17",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  },
+  {
+    "diseaseNo": "018",
+    "diseaseName": "疾病18",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  },
+  {
+    "diseaseNo": "019",
+    "diseaseName": "疾病19",
+    "categoryNo": "02",
+    "categoryName": "皮肤类"
+  }
+]
