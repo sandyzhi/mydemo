@@ -14,13 +14,13 @@
       <el-option v-for="item in allDisease" :key="item.diseaseNo" :label="item.diseaseName" :value="item"> </el-option>
     </el-select>
 
-    <el-table :data="tableData" style="width: 100%" border center>
+    <el-table :data="tableDataList" style="width: 100%" border center :span-method="tableSpanMethod">
       <el-table-column label="选择申请病种" :min-width="180" align="center">
         <template slot-scope="scope">
           <!--  -->
-          <span class="diseaseItem" v-for="item in scope.row.itemInfo" :key="item.diseaseNo"
-            >{{ item.diseaseName }}
-            <el-button type="text" class="el-icon-remove-outline" @click="removeDisease(item)"></el-button>
+          <span class="diseaseItem" :key="scope.row.diseaseNo"
+            >{{ scope.row.diseaseName }}
+            <el-button type="text" class="el-icon-remove-outline" @click="removeDisease(scope.row)"></el-button>
           </span>
         </template>
       </el-table-column>
@@ -38,6 +38,7 @@ import diseaseData from './disease.json'
 export default {
   data() {
     return {
+      tableDataList :[],
       tableData: [],
       allDisease: [],
       selectedDiseases: [],
@@ -49,17 +50,17 @@ export default {
       // 执行分组显示的问题
       // console.log(arr)
       // 根据当前选中的和之前选中的数据整合新的table 中应该展示的数据
-      const tempTableData = this.tableData
+      // const tempTableData = this.tableData
       this.diseasesDto = []
       const oldDatas = []
       const newAdds = []
-      this.tableData.forEach(row => {
-        row.itemInfo.forEach(item => {
-          oldDatas.push(item)
-        })
-      })
+      // this.tableData.forEach(row => {
+      //   row.itemInfo.forEach(item => {
+      //     oldDatas.push(item)
+      //   })
+      // })
       // 先在新的选项中找到原来讯在的保留
-      oldDatas.forEach(item => {
+      this.tableDataList.forEach(item => {
         const index = arr.findIndex(newItem => {
           return item.diseaseNo == newItem.diseaseNoht
         })
@@ -102,6 +103,15 @@ export default {
           }
         }
       })
+      
+      // 修改策略 需要单独按照顺序拿出来每一个数据 之后再合并单元格
+      this.tableDataList = []
+      this.tableData.forEach(row=>{
+        row.itemInfo.forEach(item=>{
+          this.tableDataList.push(item)
+        })
+      })
+
       // console.log(this.tableData)
     },
     removeDisease(disease) {
@@ -129,6 +139,31 @@ export default {
       //   }
       // })
       // 删除table 中对应的数据
+    },
+    tableSpanMethod({row,column,rowIndex,columnIndex}){
+      //合并单元格
+      let spanList = []
+      this.tableData.forEach(row=>{
+        spanList.push({spanLen:row.itemInfo.length,spanIndex:0})
+      })
+      // 需要合并单元格的列
+      if(columnIndex==1||columnIndex==2){
+        let spanStartIndex = 0;
+        spanList.forEach(item=>{
+          item.spanIndex = spanStartIndex
+          spanStartIndex +=item.spanLen
+        })
+      let spaned = false
+      for(let i = 0;i<spanList.length;i++){
+        if(rowIndex === spanList[i].spanIndex){
+          spaned = true
+          return {
+            rowspan:spanList[i].spanLen,
+            colspan:1
+          }
+        }
+      }
+      }
     }
   },
   mounted() {

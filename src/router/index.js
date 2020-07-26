@@ -9,12 +9,15 @@ import DynamicTable from '../views/tabledemo/dynamicTable.vue'
 import CustomTable from '../views/tabledemo/customTable.vue'
 import HBTable from '../views/tabledemo/hebingtable.vue'
 import SelectDemo from '../views/select/SelectDemo.vue'
+import DocumentStudy from  '../views/DocumentStudy.vue'
 import UploadAndDownLoad from '../views/file/UploadAndDownload.vue'
 import SortDemo from '../views/select/SortDemo.vue'
 
 Vue.use(VueRouter)
 
-const routes = [{
+const routes = [
+    {path:'/documentStudy',name:'documentStudy',component:DocumentStudy},
+   {
     path: '/',
     redirect: '/sortdemo'
   },
@@ -69,15 +72,6 @@ const routes = [{
     name: 'uploadAndDownLoad',
     component: UploadAndDownLoad
   }
-  // ,
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
 ]
 
 const router = new VueRouter({

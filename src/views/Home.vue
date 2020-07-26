@@ -24,6 +24,7 @@ export default {
       this.getListData()
     }
   },
+  // https://github.com/vuejs/vue-router.git
   methods: {
     toTwoPage() {
       console.log('toTwoPage')
