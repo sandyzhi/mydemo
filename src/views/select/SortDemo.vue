@@ -61,7 +61,7 @@ export default {
       // 先在新的选项中找到原来讯在的保留
       oldDatas.forEach(item => {
         const index = arr.findIndex(newItem => {
-          return item.diseaseNo == newItem.diseaseNo
+          return item.diseaseNo == newItem.diseaseNoht
         })
         if (index != -1) {
           this.diseasesDto.push(item)
