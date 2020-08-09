@@ -9,17 +9,27 @@ import DynamicTable from '../views/tabledemo/dynamicTable.vue'
 import CustomTable from '../views/tabledemo/customTable.vue'
 import HBTable from '../views/tabledemo/hebingtable.vue'
 import SelectDemo from '../views/select/SelectDemo.vue'
-import DocumentStudy from  '../views/DocumentStudy.vue'
+import DocumentStudy from '../views/DocumentStudy.vue'
 import UploadAndDownLoad from '../views/file/UploadAndDownload.vue'
 import SortDemo from '../views/select/SortDemo.vue'
 
+import checkbox from '../views/elementui-demo/checkbox.vue'
+
 Vue.use(VueRouter)
 
-const routes = [
-    {path:'/documentStudy',name:'documentStudy',component:DocumentStudy},
-   {
+const routes = [{
+    path: '/documentStudy',
+    name: 'documentStudy',
+    component: DocumentStudy
+  },
+  {
     path: '/',
-    redirect: '/sortdemo'
+    redirect: '/checkbox'
+  },
+  {
+    path: '/checkbox',
+    name: 'checkbox',
+    component: checkbox
   },
   {
     path: '/home',
