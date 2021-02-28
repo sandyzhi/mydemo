@@ -14,6 +14,7 @@ import UploadAndDownLoad from '../views/file/UploadAndDownload.vue'
 import SortDemo from '../views/select/SortDemo.vue'
 
 import checkbox from '../views/elementui-demo/checkbox.vue'
+import elementMain from '../views/elementui-demo/elementMain.vue'
 
 Vue.use(VueRouter)
 
@@ -23,13 +24,18 @@ const routes = [{
     component: DocumentStudy
   },
   {
-    path: '/',
+    path: '/checkbox',
     redirect: '/checkbox'
   },
   {
     path: '/checkbox',
     name: 'checkbox',
     component: checkbox
+  },
+  {
+    path: '/',
+    name: 'elementMain',
+    component: elementMain
   },
   {
     path: '/home',
